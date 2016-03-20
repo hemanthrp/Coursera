@@ -13,7 +13,7 @@ list(set=set, get=get,
    getmatrix=getmatrix)
 }
 
-cacheSolve <- function(x=matrix(), ...) {
+cacheSolve <- function(x, ...) {
     m<-x$getmatrix()
     if(!is.null(m)){
       message("getting cached data")
